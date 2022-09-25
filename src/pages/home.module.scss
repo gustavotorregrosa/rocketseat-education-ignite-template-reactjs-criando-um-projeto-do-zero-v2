@@ -1,0 +1,63 @@
+@import "../styles/variables.scss";
+
+.post {
+  a {
+    display: block;
+    text-decoration: none;
+    &:hover {
+      h1 {
+      transition: color .3s;
+      color: var(--highlight)
+      }
+    }
+    & + a {
+      margin-top: 3rem;
+    }
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading);
+  }
+  p {
+    color: var(--body);
+    font-style: 400;
+    font-size: 1.125rem;
+  }
+  &:last-child {
+    margin-bottom: 3rem;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  max-width: 700px;
+  span {
+    display: flex;
+    align-items: center;
+    color: var(--info);
+    font-size: 1.1rem;
+    & + span {
+      margin-left: 2rem;
+    }
+    svg {
+      color: var(--info);
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.action {
+  margin-top: 3rem;
+  button {
+    color: var(--highlight);
+    font-size: 1.125rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+  }
+}
